@@ -1,0 +1,6 @@
+<ng-container *ngIf="episodes">
+  <h5 class="text-gray">Chapters appeared: {{ episodes.length }}</h5>
+  <span *ngFor="let ep of episodes" class="pipe-seperated">
+    {{ ep.name }}
+  </span>
+</ng-container>

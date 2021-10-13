@@ -1,0 +1,26 @@
+<div class="grid-container -wrapper">
+  <div class="grid-item">
+    <h1>{{ character?.name }}</h1>
+    <div class="grid-container">
+      <div class="grid-item" *ngIf="character?.origin">
+        <app-location
+          [title]="'Origin'"
+          [locationRef]="character.origin"
+        ></app-location>
+      </div>
+      <div class="grid-item" *ngIf="character?.location">
+        <app-location
+          [title]="'Location'"
+          [locationRef]="character.location"
+        ></app-location>
+      </div>
+    </div>
+    <ng-container *ngIf="character?.episode">
+      <h2>Episodes</h2>
+      <app-episode-list [episodeRefs]="character.episode"></app-episode-list>
+    </ng-container>
+  </div>
+  <div class="grid-item" *ngIf="character?.image">
+    <img src="{{ character.image }}" />
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="location_wrapper">
+  <h2>{{ title }}</h2>
+  <div class="section">
+    <h5 class="text-gray">Name</h5>
+    <p>{{ location?.name || "-" }}</p>
+  </div>
+  <div class="section">
+    <h5 class="text-gray">Type</h5>
+    <p>{{ location?.type || "-" }}</p>
+  </div>
+  <div class="section">
+    <h5 class="text-gray">Dimension</h5>
+    <p>{{ location?.dimension || "-" }}</p>
+  </div>
+  <div class="section">
+    <h5 class="text-gray">Total residents</h5>
+    <p>{{ location?.residents?.length || "-" }}</p>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.header-container {
+  display: flex;
+  background: white;
+  color: #aaa;
+  height: 15vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+
+  h1{
+      font-size: 5vh;
+  }
+}
