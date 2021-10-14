@@ -1,6 +1,6 @@
 # RickMorty
 
-This repo is hosted at abhilashgayen-rickmorty.surge.sh
+This repo is hosted at https://abhilashgayen-rickmorty.surge.sh
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
