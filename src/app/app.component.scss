@@ -2,17 +2,19 @@
   display: flex;
   background: white;
   color: #aaa;
-  height: 15vh;
+  height: 5rem;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 5;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
 
-
-  h1{
-      font-size: 5vh;
+  h1 {
+    font-size: 36px;
   }
+}
+
+main {
+  margin-top: 5rem;
 }

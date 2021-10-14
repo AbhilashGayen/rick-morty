@@ -15,10 +15,7 @@ export class CharacterProfileComponent implements OnInit {
   character: Character;
   episodes: Episode[];
 
-  constructor(
-    private api: CharacterApiService,
-    private route: ActivatedRoute,
-  ) {
+  constructor(private api: CharacterApiService, private route: ActivatedRoute) {
     this.route.queryParams.subscribe((params) => {
       this.id = params['id'];
     });

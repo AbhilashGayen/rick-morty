@@ -1,6 +1,6 @@
-<div class="characters_wrapper">
+<div class="characters_wrapper" id="character_list">
   <ng-container *ngFor="let character of characters">
-    <div class="character_card">
+    <div class="character_card" (click)="openProfile(character.id)">
       <div class="image_wrapper">
         <img [src]="character.image" />
       </div>
