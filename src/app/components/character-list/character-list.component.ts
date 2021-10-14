@@ -50,6 +50,7 @@ export class CharacterListComponent implements OnInit {
 
   onPageChange(event: PageEvent) {
     this.getCharacters(event.pageIndex + 1);
+    this.onPaginateChange();
   }
 
   getCharacters(pageIndex: number) {
@@ -57,6 +58,10 @@ export class CharacterListComponent implements OnInit {
       this.pagingInfo = response.info;
       this.characters = response.results;
     });
+  }
+
+  onPaginateChange() {
+    window.scroll({ top: 0, behavior: 'smooth' });
   }
 }
 

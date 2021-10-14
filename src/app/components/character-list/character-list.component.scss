@@ -19,10 +19,14 @@
   box-shadow: 0;
   transform: scale(0.95);
   transition: box-shadow 0.5s, transform 0.5s;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1);
     box-shadow: 5px 20px 30px rgba(221, 214, 214, 0.3);
+    a {
+      color: orange;
+    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -50,10 +54,6 @@
   h5 {
     margin-bottom: 2px;
   }
-}
-
-a :hover {
-  color: orange;
 }
 
 .material-icons {
